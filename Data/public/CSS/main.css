@@ -1,0 +1,374 @@
+body {
+    background-image: url(1.jpg);
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    font-family:cursive;
+    text-shadow: 2px 2px 0px white; 
+    text-align: left;
+    height: 35px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: blue;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(255,255,255);
+    justify-content: space-between;
+}
+
+.header h2{
+    font-size: 25px;
+    width: 100px;
+    background-color: none;
+    font-weight: bold;
+}
+.header h2 a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s color;
+   
+}
+
+.header h2 a:hover {
+    color: red;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+.form-register h1 {
+    font-size: 35px;
+}
+h1, h2{
+    font-size: 25px;    
+    font-weight: bold;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: blue;
+}
+
+h1 {
+    width: 300px;
+}
+
+.box button {
+    
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
+form input {
+    width: 70%;
+    border-radius: 5px;
+}
+
+form{
+    background-color: white;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 150px;
+    box-shadow: 0 0 30px rgb(255,255,255);
+}
+.form-group a{
+    text-decoration: underline;
+}
+
+.form-register {
+    height: 450px;
+    margin: 60px;
+}
+
+.form-regans {
+    height: 150px;
+    
+}
+
+.alert {
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+.header img {
+    
+    width: 50px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.3s color;
+    color: black;
+    font-weight: bold;
+}
+
+.header a:hover{
+    text-decoration: none;
+    color:red;
+}
+
+.log button {
+    font-family: cursive;
+}
+
+.log a {
+    font-family: cursive;
+} 
+
+.form-2 {
+    display: flex;
+    
+}
+
+.home {
+    font-family: cursive;
+}
+
+.home a {
+    font-family: cursive;
+}
+
+.home-img {
+    margin: 0px;
+    margin-top: 0px;
+    margin-left: 200px;
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 300px;
+}
+
+.home-img img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.home-data {
+    text-align: left;
+    font-size: 20px;
+    margin: 0px;
+    margin-left: 10px;
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 650px;
+    height: 300px;
+
+}
+
+.name {
+    text-align: center;
+    background-color: silver;
+}
+
+.b-day {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.country {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.number {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.email-1 {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.prof {
+    margin: 0px;
+    margin-top: 40px;
+    width: 800px;
+    height: auto;
+}
+
+.prof button {
+    font-family: cursive;
+}
+
+.prof a {
+    font-family: cursive;
+}
+
+.prof h1 {
+    font-family: cursive;
+    width: 800px;
+}
+
+.prof label {
+    font-family: cursive;
+}
+
+.home-post {
+    border-radius: 10px;    
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 650px;
+    height: auto;
+}
+
+.post {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    background-color: silver;
+}
+
+.form-new_post {
+    margin: 0px;
+    margin-top: 100px;
+    width: 800px;
+    height: auto;
+}
+
+.form-new_post h1   {
+    width: 800px;
+    font-family: cursive;
+}
+
+.form-new_post label{
+    font-family: cursive;
+}
+
+.form-new_post textarea {
+    width: 700px;
+    margin-left: 50px;
+}
+.home-post button {
+    
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px rgb(0, 0, 0);
+    margin-bottom: 5px;
+}
+.home-post button a{
+    font-family: cursive;
+    text-decoration: none;
+    color: black;
+    
+}
+.form-red {
+    margin: 0px;
+    margin-top: 100px;
+    width: 800px;
+    height: auto;
+}
+
+.form-red a {
+    font-family: cursive;
+}
+
+.form-red h1{
+    font-size: 35px;
+    width: 800px;
+    font-family: cursive;
+}
+
+.form-red label {
+    font-family: cursive;
+}
+
+.form-red textarea {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.form-red button {
+    font-family: cursive;
+}
+
+.show {
+    font-family: cursive;
+    margin: 0px;
+    margin-top: 50px;
+    width: 800px;
+    height: auto;
+}
+
+.show h1 {
+    width: 800px;
+    font-family: cursive;
+}
+
+.kom {
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.body {
+    background-color: silver;
+}
+
+.show textarea {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.author {
+    width: 650px;
+}
+
+.search {
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 200px;
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 150px;
+}
+
+.search a {
+    font-size: 15px;
+}
+
+.search label {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 300px;
+    background-color: silver;
+}
+
+.search button {
+    
+    border-radius: 15px;
+}
+
+.search input {
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-radius: 20px;
+}
+
+.none {
+    height: auto;
+}

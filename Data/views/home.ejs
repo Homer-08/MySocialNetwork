@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link href="/public/CSS/main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+        <title>V10-ke</title>
+    </head>
+    <body>
+        <%- include("partials/navbar.ejs") %>
+        
+        <div class="home">
+            <div class="form-2">
+                <form class="home-img">
+                    <img alt="Photo" src="<%- data.image %>">
+                    
+                    <% if (currentUser.name === data.name) { %>
+                        <hr>
+                        <a href="/profile">Редактировать информацию</a>
+                        <% } else { %>
+                        
+                        <% } %>
+                    
+                </form>
+                <form class="home-data">
+                    <div class="name">
+                        <%- data.name %>
+                        <%- data.surname %>
+                    </div>
+                    <div class="b-day">
+                        Дата рождения:
+                        <%- data.data_birth %>
+                        (Г/М/Д)
+                    </div>
+                    <div class="country">
+                        Страна: <%- data.country %>
+                    </div>
+                    <div class="number">
+                        Номер телефона: +<%- data.number %>
+                    </div>
+                    <div class="email-1">
+                        Email: <%- data.email %>
+                    </div>
+                </form>
+            </div>
+            <div class="form-2">
+                <form class="search" method="post" action="/home">
+                    <div class="form-group">
+                        <label>Поиск</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="surname">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Найти</button>
+                    </div>
+                </form>
+                <form class="home-post">
+                    <div class="post">
+                        <label>Посты</label>
+                    </div>
+                    <table class="table table-striped">
+                        <tbody>
+                            <% posts.forEach(function(post) { %>
+                            <tr>
+                                <td><%- post["title"] %></td>
+                                <td>
+                                    <% if (currentUser.name === data.name) { %>
+                                        <a href="/posts/<%- post['id'] %>/show" class="btn btn-primary">Show</a>
+                                        <a href="/posts/<%- post['id'] %>/edit" class="btn btn-success">Edit</a>
+                                        <a href="/posts/<%- post['id'] %>/delete" class="btn btn-danger">Delete</a> 
+                                    <% } else { %>
+                                        <a href="/posts/<%- post['id'] %>/show" class="btn btn-primary">Show</a>
+                                    <% } %>
+                                </td>
+                            </tr>
+                            <% }) %> 
+                            </tbody>
+                    </table>
+                    <div class="form-group">
+                        <% if (currentUser.name === data.name) { %>
+                        <button><a href="/new_post">Создать новый пост</a> </button>
+                        <% } else { %>
+                        
+                        <% } %>
+                    </div>
+                </form> 
+            </div>
+            
+        </div>
+    </body>
+</html>

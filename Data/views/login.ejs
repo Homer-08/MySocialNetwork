@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link href="/public/CSS/main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+        <title>V10-ke</title>
+    </head>
+    <body>
+        <%- include("partials/navbar.ejs") %>
+        
+        <% if (error !== "") { %>
+            <div class="alert alert-danger" role="alert">
+                <%- error %> 
+            </div>
+        <% } %>
+        <div class="box">
+            <form class="log" method="post" action="/login">
+                <div class="form-group">
+                    <h1>Вход</h1>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Пароль" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Войти</button>
+                </div>
+                <div class="form-group">
+                    <a href="/register">Зарегистрироватся</a>
+                </div>
+            </form>
+        </div>
+        
+        <script src="/jquery/jquery.min.js"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

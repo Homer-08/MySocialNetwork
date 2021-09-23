@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link href="/public/CSS/main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+        <title>V10-ke</title>
+    </head>
+    <body>
+        <%- include("partials/navbar.ejs") %>
+        
+        <div class="box">
+            <form class="prof" method="post" action="/profile" enctype="multipart/form-data"> 
+                <div class="form-group">
+                    <h1>Редактирование информации</h1>
+                </div>
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" name="name" value="<%- currentUser.name %>" placeholder="Николай">
+                </div>
+                <div class="form-group">
+                    <label for="surname">Фамилия:</label>
+                    <input type="text" name="surname" value="<%- currentUser.surname %>" placeholder="Пунько">
+                </div>
+                <div class="form-group">
+                    <label for="data_birth">Дата рождения:</label>
+                    <input type="date" name="data_birth" value="<%- currentUser.data_birth %>">
+                </div>
+                <div class="form-group">
+                    <label for="country">Страна:</label>
+                    <input type="text" name="country" value="<%- currentUser.country %>" placeholder="Украина, Харьков">
+                </div>
+                <div class="form-group">
+                    <label for="number">Номер телефона:</label>
+                    <input type="tel" pattern="[0-9]{12}" name="number" value="<%- currentUser.number %>" placeholder="380999204939">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" value="<%- currentUser.email %>" placeholder="nikolaypunko777@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="image">Аватарка:</label>
+                    <input type="file" name="avatar">
+                </div>
+                <div class="form-group">
+                    <label for="message">Пароль:</label>
+                    <input type="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Редактировать</button>
+                </div>
+                <div class="form-group">
+                    <a href="/home">Вернуться назад</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
